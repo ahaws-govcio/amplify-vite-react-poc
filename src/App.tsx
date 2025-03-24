@@ -37,4 +37,5 @@ function App({ signOut }: { signOut: () => void }) {
 
 export default withAuthenticator(App, {
   hideSignUp: false,
+  signUpAttributes: ['given_name', 'family_name'],
 });
